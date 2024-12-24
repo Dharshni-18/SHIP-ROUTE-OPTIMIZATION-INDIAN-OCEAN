@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ship Routing - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Video background container -->
+  <div class="video-background">
+    <video autoplay muted loop>
+      <source src="https://cdn.pixabay.com/video/2024/09/24/232938_large.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Login form container -->
+  <div class="wrapper">
+    <form onsubmit="return validateLogin()">
+      <h2>Login</h2>
+      <div class="input-field">
+        <input type="text" id="username" required>
+        <label for="username">Username</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="password" required>
+        <label for="password">Password</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit">Log In</button>
+      <div class="register">
+        <p>Don't have an account? <a href="#">Register</a></p>
+      </div>
+      <p id="error" style="color: red; display: none;">Invalid username or password.</p>
+    </form>
+  </div>
+
+  <script>
+    function validateLogin() {
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      if (username === "dss" && password === "12345") {
+        window.location.href = "ind.html"; // Redirect to the next page
+        return false;
+      } else {
+        document.getElementById("error").style.display = "block";
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>

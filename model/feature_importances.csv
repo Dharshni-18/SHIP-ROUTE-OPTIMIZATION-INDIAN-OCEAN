@@ -1,0 +1,7 @@
+Feature,Importance
+origin_city,0.05825682562015567
+destination_city,0.023461962815983957
+distance,0.3525685785004768
+fuel_consumption,0.4025115540570657
+weather_condition,0.023211004410619324
+safety_factor,0.1399900745956985

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Login Box -->
+    <div class="login-box">
+        <img src="{{ url_for('static', filename='images/ship.jpg') }}" class="form-image" alt="Login Image">
+        <h1>Login</h1>
+        <form id="loginForm" action="/login" method="post">
+            <label for="email">Username</label>
+            <input type="text" id="email" name="username" placeholder="Your Username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Your Password" required>
+            <input type="submit" value="Login">
+        </form>
+        <p>Don't have an account? <a href="#" id="signPage">Sign Up</a></p>
+    </div>
+
+    <!-- Sign Up Box -->
+    <div class="signUp-box" style="display: none;">
+        <img src="{{ url_for('static', filename='images/ship.jpg') }}" class="form-image" alt="Signup Image">
+        <h1>Sign Up</h1>
+        <form id="signupForm" action="/signup" method="post">
+            <label for="u-name">Username</label>
+            <input type="text" id="u-name" name="username" placeholder="Your username" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="password" placeholder="Your Password" required>
+            <label for="c-pass">Confirm Password</label>
+            <input type="password" id="c-pass" name="confirm_password" placeholder="Confirm Password" required>
+            <input type="submit" value="Sign Up">
+        </form>
+        <p>Already have an account? <a href="#" id="loginPage">Login here</a></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

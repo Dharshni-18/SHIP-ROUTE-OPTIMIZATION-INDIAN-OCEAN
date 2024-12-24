@@ -1,0 +1,97 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://i.pinimg.com/736x/6c/5e/67/6c5e67d41ae057e7caa548bd5ef5aeae.jpg') no-repeat center center;
+    background-size: cover;
+    color: #f1faee;
+}
+
+.route-box {
+    background-color: #ab7f4698; /* Adjusted colors for a more opaque gradient */
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), 
+                0 0 10px #c0a08a5f, /* Adds a subtle outer glow in brown */
+               
+}
+
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #f1faee;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #faf9f9;
+
+}
+
+
+input[type="text"],
+input[type="number"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #a8dadc;
+    border-radius: 5px;
+    background-color: #f1faee;
+    color: #1d3557;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #f1faee;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #f05c00;
+}
+
+/* Responsive Styling */
+@media (max-width: 500px) {
+    .route-box {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    label, input[type="submit"] {
+        font-size: 0.9rem;
+    }
+}

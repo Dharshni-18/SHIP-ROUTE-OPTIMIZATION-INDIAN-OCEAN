@@ -1,0 +1,14 @@
+origin_city,destination_city,distance,fuel_consumption,weather_condition,safety_factor,time_taken
+Chennai,Port Blair,2000,500,Clear,0.9,36
+Chennai,Port Blair,2500,600,Cloudy,0.8,42
+Chennai,Port Blair,2200,550,Rainy,0.7,45
+Port Blair,Chennai,2000,500,Clear,0.9,35
+Port Blair,Chennai,2400,580,Cloudy,0.85,40
+Port Blair,Chennai,2300,550,Rainy,0.75,43
+Chennai,Mumbai,1000,300,Clear,0.95,18
+Chennai,Mumbai,1100,320,Cloudy,0.9,22
+Chennai,Mumbai,1050,310,Rainy,0.88,24
+Mumbai,Chennai,1000,300,Clear,0.95,17
+Mumbai,Chennai,1200,330,Cloudy,0.92,20
+Mumbai,Chennai,1150,310,Rainy,0.89,23
+

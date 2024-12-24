@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sailor Sentinel</title>
+    <link rel="stylesheet" href="stl.css">
+</head>
+<body>
+    <header class="header">
+        <div class="admin-info">
+            <img src="C:/Users/sunmi/OneDrive/Desktop/Ship/Ship/2db23f37c4467eb0317f6ccb7384339f.jpg" alt="Admin Photo" class="admin-photo">
+            <span class="admin-name">DSS</span>
+        </div>
+        <div class="header-buttons">
+            <button class="btn">Settings</button>
+            <button class="btn">Help</button>
+            <a href="#" class="home-link">Log Out</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h1>Sailor's Sentinel</h1>
+        <p class="intro"><i>
+            Welcome to Sailor Sentinel! Explore our platform dedicated to guiding sailors with advanced route planning and navigational assistance. Enjoy real-time route finding, weather updates, and tools for a safer and more efficient maritime journey.
+        </i></p>
+        <div class="action-buttons">
+            <button class="action-btn" onclick="navigateToRoute()">Find Route</button>
+        </div>
+    </main>
+
+    <script>
+        function navigateToRoute() {
+            window.location.href = "route_form.html"; // Target page URL
+        }
+
+        // IBM Watson Assistant Chat configuration
+        window.watsonAssistantChatOptions = {
+            integrationID: "89b1b88a-928e-4e65-9136-3b5829682bc7", // Replace with your Integration ID
+            region: "au-syd", // Replace with your region
+            serviceInstanceID: "51773f80-2142-4c95-a361-834cd06846bc", // Replace with your Service Instance ID
+            onLoad: function(instance) {
+                instance.render(); // Automatically renders the chat in the bottom right corner
+                instance.updateCSSVariables({
+                    '--ibm-watson-chat-popup-width': '400px',
+                    '--ibm-watson-chat-popup-height': '600px',
+                    '--ibm-watson-chat-offset-right': '20px',
+                    '--ibm-watson-chat-offset-bottom': '20px'
+                });
+            }
+        };
+        
+        // Load Watson Assistant Chat script
+        setTimeout(function(){
+            const scriptElement = document.createElement("script");
+            scriptElement.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/latest/WatsonAssistantChatEntry.js";
+            document.head.appendChild(scriptElement);
+        });
+    </script>
+</body>
+</html>

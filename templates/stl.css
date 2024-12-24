@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1547864981-acbe95d13c63?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Makes the background image fixed while scrolling */
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.774); /* Transparent blue */
+    color: white;
+    width: 100%;
+}
+
+
+.admin-info {
+    display: flex;
+    align-items: center;
+}
+
+.admin-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.admin-name {
+    font-weight: bold;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    background-color: #e47826;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    margin-right: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color:#000000;
+}
+
+.home-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 6px 10px;
+    background-color: #e74c3c;
+    border-radius: 4px;
+}
+
+.home-link:hover {
+    background-color: #c0392b;
+}
+
+/* Center main content */
+.main-content {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.388); /* White with 50% transparency */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+.main-content h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    color: #020b38;
+    margin-bottom: 20px;
+}
+
+.intro {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+/* Action buttons styling */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    background-color: #e47826;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+    background-color: #000000;
+}
